@@ -1,18 +1,17 @@
 # Deep Learning with Multimodal Representation for Pancancer Prognosis Prediction
-- - - -
-This research estimate the time-til-death for patients across 20 different cancer types using the vast amount of multimodal data that is available for cancer patients. 
+Our model estimates the time-til-death for patients across 20 different cancer types using the vast amount of multimodal data that is available for cancer patients. 
 We developed an unsupervised encoder to compress these four data modalities into a patient feature vectors, using deep highway networks to extract features from clinical and genomic data, and dilated convolutional neural networks to extract features from whole slide images. These feature encodings were then used to predict single cancer and pancancer overall survival, achieving a C-index of 0.78 overall.
 Our model handles multiple data modalities, efficiently analyzes WSIs, and represents patient multi-modal data flexibly into an unsupervised, informative representation resilient to noise and missing data.
 
 *For more details, see [our paper](https://www.biorxiv.org/content/biorxiv/early/2019/03/16/577197.full.pdf).* 
-- - - -
+
 ## Installation
 ```
 git clone https://github.com/gevaertlab/MultimodalPrognosis
 cd MultimodalPrognosis
 pip install -r requirements.txt
 ```
-- - - -
+
 ## Running Experiments
 All experiments are in the `MultimodalPrognosis/experiments` directory. 
 
@@ -29,7 +28,4 @@ To run the experiment of your choice, simply type `python  experiments/chartX.py
 To run the experiment without multimodal dropout, do not include `multi`.
 
 _Note: This code is built to run on a CPU._
-
-note to self, remove unnecessary files, add readme
-remove predict12, basic
 
