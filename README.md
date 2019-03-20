@@ -3,7 +3,7 @@ Our model estimates the time-til-death for patients across 20 different cancer t
 We developed an unsupervised encoder to compress these four data modalities into a patient feature vectors, using deep highway networks to extract features from clinical and genomic data, and dilated convolutional neural networks to extract features from whole slide images. These feature encodings were then used to predict single cancer and pancancer overall survival, achieving a C-index of 0.78 overall.
 Our model handles multiple data modalities, efficiently analyzes WSIs, and represents patient multi-modal data flexibly into an unsupervised, informative representation resilient to noise and missing data.
 
-*For more details, see [our paper](https://www.biorxiv.org/content/biorxiv/early/2019/03/16/577197.full.pdf).* 
+*For more details, see [our paper](https://www.biorxiv.org/content/10.1101/577197v1).* 
 
 ## Installation
 ```
